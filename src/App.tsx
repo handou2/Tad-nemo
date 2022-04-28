@@ -1,24 +1,20 @@
 import React from "react";
 import "./App.less";
-import { Button } from "antd";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HomePage, SignIn, EnrollPage } from "./pages";
+import { SandBox } from "./pages/SandBox";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {/* Learn React */}
-          <Button type="primary">Primary Button</Button>
-        </a>
-      </header>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<SandBox />} />
+          <Route path="/home" element={<HomePage />} />
+          <Route path="/signIn" element={<SignIn />} />
+          <Route path="/enroll" element={<EnrollPage />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
