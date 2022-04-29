@@ -1,6 +1,6 @@
 import React from "react";
 import { Layout, Menu, MenuProps } from "antd";
-import styles from "./HeaderPage.module.scss";
+import styles from "./TopHeader.module.scss";
 
 const { Header } = Layout;
 
@@ -9,7 +9,7 @@ const items1: MenuProps["items"] = ["1", "2", "3"].map((key) => ({
   label: `nav ${key}`,
 }));
 
-export const HeaderPage = () => {
+export const TopHeader = () => {
   return (
     <div>
       <Header className="header">

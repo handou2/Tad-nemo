@@ -37,9 +37,9 @@ export const EnrollPage = () => {
     <div>
       {" "}
       <div style={{ height: "100%", overflow: "hidden" }}>
-        <ParticlesBg type="fountain" bg={true} config={config} />
+        <ParticlesBg type="random" bg={true} config={config} />
         <div className={styles["formContainer"]}>
-          <div className={styles["logintitle"]}>TASK</div>
+          <div className={styles["logintitle"]}>TASK-Enroll</div>
           <Form name="normal_login" className="login-form">
             <Form.Item
               name="username"
@@ -70,7 +70,7 @@ export const EnrollPage = () => {
                 htmlType="submit"
                 className={styles["login-form-button"]}
               >
-                登录
+                注册
               </Button>
             </Form.Item>
           </Form>

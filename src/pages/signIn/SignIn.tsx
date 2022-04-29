@@ -5,6 +5,7 @@ import { Route } from "react-router-dom";
 
 // import { UserOutlined, LockOutlined } from "@ant-design/icons";
 import styles from "./SignIn.module.scss";
+import { Link } from "react-router-dom";
 export const SignIn = () => {
   let config = {
     num: [4, 7],
@@ -40,9 +41,9 @@ export const SignIn = () => {
     <div>
       {" "}
       <div style={{ height: "100%", overflow: "hidden" }}>
-        <ParticlesBg type="fountain" bg={true} config={config} />
+        <ParticlesBg type="random" bg={true} config={config} />
         <div className={styles["formContainer"]}>
-          <div className={styles["logintitle"]}>TASK</div>
+          <div className={styles["logintitle"]}>TASK-SignIn</div>
           <Form name="normal_login">
             <Form.Item
               name="username"
@@ -78,9 +79,11 @@ export const SignIn = () => {
               </Button>
             </Form.Item>
           </Form>
-          <div className={styles.enroll}>
-            未注册？<div>点击注册</div>
-          </div>
+          <Link to="/enroll">
+            <div className={styles.enroll}>
+              未注册？<div>点击注册</div>
+            </div>
+          </Link>
         </div>
       </div>
     </div>
