@@ -20,3 +20,6 @@
 .ant-layout {
   height: 100%;
 }
+.ant-layout-header {
+  box-shadow: 2px 2px 2px 2px rgba(145, 141, 141, 0.2);
+}
