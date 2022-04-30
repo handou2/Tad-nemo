@@ -9,34 +9,25 @@ import {
 
 const { Sider } = Layout;
 const { SubMenu } = Menu;
-
-// const items: MenuProps["items"] = [
-//   UserOutlined,
-//   LaptopOutlined,
-//   NotificationOutlined,
-// ].map((icon, index) => {
-//   const key = String(index + 1);
-
-//   return {
-//     key: `sub${key}`,
-//     icon: React.createElement(icon),
-//     label: `subnav ${key}`,
-
-//     children: new Array(4).fill(null).map((_, j) => {
-//       const subKey = index * 4 + j + 1;
-//       return {
-//         key: subKey,
-//         label: `option${subKey}`,
-//       };
-//     }),
-//   };
-// });
+const menuList = [
+  {
+    key: "/home",
+    title: "首页",
+    icon: <VideoCameraOutlined />,
+  },
+  {
+    key: "/home",
+    title: "首页",
+    icon: <VideoCameraOutlined />,
+    children: [],
+  },
+];
 export const SideMenu = () => {
   return (
     <div>
       <Sider width={200} className={styles["site-layout-background"]}>
         <Menu mode="inline" defaultSelectedKeys={["3"]}>
-          <Menu.Item key="1" icon={<VideoCameraOutlined />}>
+          <Menu.Item key="/home" icon={<VideoCameraOutlined />}>
             首页
           </Menu.Item>
           <Menu.Item key="2" icon={<VideoCameraOutlined />}>

@@ -12,10 +12,10 @@ const items1: MenuProps["items"] = ["1", "2", "3"].map((key) => ({
 export const TopHeader = () => {
   return (
     <div>
-      <Header className="header">
+      <Header className={styles["header"]}>
         <div className="logo" />
         <Menu
-          theme="dark"
+          className={styles["Menu"]}
           mode="horizontal"
           defaultSelectedKeys={["2"]}
           items={items1}

@@ -18,7 +18,6 @@ export default function IndexRouter() {
             )
           }
         />
-        <Route path="/home" element={<HomePage />} />
       </Routes>
     </BrowserRouter>
   );

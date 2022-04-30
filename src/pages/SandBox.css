@@ -12,12 +12,11 @@
 }
 
 .site-layout-background {
-  background: hsl(0, 18%, 97%);
-  position: absolute;
-  left: 250px;
-  right: 40px;
-  top: 90px;
-  bottom: 0;
+  background: rgb(255, 255, 255);
   overflow-y: scroll;
   border-radius: 5px;
+}
+#root,
+.ant-layout {
+  height: 100%;
 }

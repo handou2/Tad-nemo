@@ -3,11 +3,7 @@ import "./App.less";
 import IndexRouter from "./router/IndexRouter";
 
 function App() {
-  return (
-    <div className="App">
-      <IndexRouter></IndexRouter>
-    </div>
-  );
+  return <IndexRouter></IndexRouter>;
 }
 
 export default App;
